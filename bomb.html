@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS2 Bomb Panel</title>
+ 	<link rel="stylesheet" type="text/css" href="bomb.css">
+</head>
+<body>
+
+  <div id="screen">* * * * * * *</div>
+
+  <div class="keypad">
+    <button class="key" disabled>1</button>
+    <button class="key" disabled>2</button>
+    <button class="key" disabled>3</button>
+    <button class="key" disabled>4</button>
+    <button class="key" disabled>5</button>
+    <button class="key" disabled>6</button>
+    <button class="key" disabled>7</button>
+    <button class="key" disabled>8</button>
+    <button class="key" disabled>9</button>
+    <button class="notkey star" >*</button>
+    <button class="key" disabled>0</button>
+    <button class="notkey" disabled>#</button>
+  </div>
+
+  <button id="startBtn">Start</button>
+
+  <!-- AUDIO -->
+  <audio id="startSound" src="0526.mp3"></audio>
+  <audio id="pressSound" src="0526 (1).mp3"></audio>
+  <audio id="plantSound" src="0526(3).mp3"></audio>
+  <video id="explosionVideo" src="your-explosion-video.mp4" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+  display: none;
+" muted></video>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
